@@ -12,15 +12,19 @@ const PORT = 5000;
 // Connect to MongoDB
 connectDB();
 
+// FRONTEND URL
+// const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://nayanstudio.onrender.com"
+
 // Middleware
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: BASE_URL }));
 
 // Integrate Socket.IO
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: BASE_URL,
     methods: ["GET", "POST"],
   },
 });
