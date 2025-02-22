@@ -50,49 +50,44 @@ const Index = () => {
   // Post data with unique image arrays for each slider
   const postData = [
     {
-      heading: "Bhagyesh & Khevana  [ Jaishalmer ]",
+      heading: "Bhagyesh & Khevana  [ Love Marriage ]",
       date: "October 17, 2024",
       content:
-        "Jehana and Kanishk, planned a beautiful New Delhi wedding that honored their roots across Mumbai, Singapore, and Dubai. The celebrations kicked off with a sundowner at the bride’s uncle's home, followed by a bohemian garden-themed sangeet, and culminated in a Mughal-inspired wedding at Amaara Farms, complete with a mandap under a majestic tree. They focused on sustainability, turning their wedding flowers into incense sticks and reworking traditional customs. Every detail, from music to décor, reflected timeless elegance and thoughtful planning.",
+        "Bhagyesh and Khevana’s love grew from a deep understanding and mutual respect, building a bond that was both genuine and enduring. Their connection was effortless, a natural evolution of two people finding not just a partner but a true companion. Their wedding was an enchanting affair, marked by vibrant colors and an atmosphere full of warmth, reflecting the life they were beginning together. The ceremony captured the essence of their love—simple, beautiful, and full of joy. Bhagyesh and Khevana’s story shows that love isn’t just about grand gestures but about the quiet moments of connection that create a lifetime of memories.",
       sliderImages: jaishalmerImages, // Assign dynamically loaded images
-      venue:
-        "ShaadiKnot & Sanya Mehndiratta Styled By: Bridelan MUA: Jasmeet Kapany Outfits: Tarun Tahiliani, Sabyasachi Decor: Aroosi Events",
+      venue: "Not Given",
     },
     {
-      heading: "Lancy & Pavan [ Kashmir ]",
+      heading: "Lancy & Pavan [ Arrange Marriage ]",
       date: "November 5, 2024",
       content:
-        "Anshika and Arjun celebrated their wedding in a traditional style, blending the customs of both their families. The day was filled with joy, colors, and laughter, marking the beginning of their lifelong journey together. They exchanged vows at the magnificent venue, followed by a grand reception. Every moment captured was a reflection of their love and commitment to one another.",
+        "Lancy and Pavan's love blossomed beautifully from an arranged marriage, where two strangers grew into soulmates. Their relationship was nurtured through conversations, shared values, and a deep connection that developed naturally. Their wedding was a heartfelt celebration, reflecting their journey together—simple yet full of life. The vibrant decorations and joyous atmosphere mirrored their love, which flourished as they discovered the beauty of being with someone who complements them perfectly. Lancy and Pavan’s bond is a true testament to how love can be a journey of discovery, filled with harmony, respect, and lasting happiness.",
       sliderImages: kashmirImages, // Assign dynamically loaded images
-      venue:
-        "Venue: The Royal Palace, Styled By: The Wedding Company, MUA: Anita Sharma, Outfits: Abu Jani Sandeep Khosla, Decor: Vivid Weddings",
+      venue: "Not Given",
     },
     {
-      heading: "Stephanie & Soumyadeep [ Goa ]",
+      heading: "Stephanie & Soumyadeep [ Arrange Marriage ]",
       date: "September 22, 2024",
       content:
         "Priya and Manish’s wedding was a blend of modern and traditional elements. The ceremony took place at a luxurious resort, followed by a beautiful reception where family and friends gathered to celebrate. Their wedding was all about elegance, with beautiful floral decorations and an enchanting atmosphere that made the day unforgettable.",
       sliderImages: goaImages,
-      venue:
-        "Venue: The Grand Resort, Styled By: Wedding Dreams, MUA: Leela Kapoor, Outfits: Falguni Shane Peacock, Decor: Elegant Creations",
+      venue: "Not Given",
     },
     {
-      heading: "Yash & Shraddha [ Stephanie & Soumyadeep ]",
+      heading: "Yash & Shraddha [ Arrange Marriage ]",
       date: "December 12, 2024",
       content:
-        "Ravi and Sonali tied the knot in a breathtaking wedding ceremony that combined traditional elements with modern aesthetics. The event took place at a stunning outdoor venue with panoramic views of the mountains. From the mehendi ceremony to the grand reception, every detail was designed to celebrate their love and the union of their families.",
+        "Yesha and Shraddha marriage began with a foundation of respect and understanding, but it quickly grew into something far deeper. Their journey together was one of discovery, where they found strength in each other’s presence and trust in the relationship they were building. Their wedding, a blend of tradition and elegance, was a reflection of their evolving bond. Surrounded by loved ones, the ceremony was a celebration not just of their union but of the partnership they had formed, full of promise and shared dreams. Yesha and Shraddha story is a reminder that true love can emerge from the most unexpected beginnings, growing stronger over time.",
       sliderImages: stephanieSoumyadeepImages,
-      venue:
-        "Venue: Mountain View Resort, Styled By: Elite Weddings, MUA: Ayesha Kapoor, Outfits: Manish Malhotra, Decor: Dream Event Planners",
+      venue: "Not Given",
     },
     {
       heading: "Yesha & Bhargesh",
       date: "January 10, 2025",
       content:
-        "Meera and Vijay’s wedding was a magical affair that blended modern luxury with rich cultural traditions. They exchanged vows at a picturesque venue that offered stunning views, with guests enjoying a celebration filled with music, dance, and endless joy. The wedding was filled with heartwarming moments and stunning visual aesthetics, showcasing their journey together.",
+        "Yesha and Bhargesh's marriage began with a foundation of respect and understanding, but it quickly grew into something far deeper. Their journey together was one of discovery, where they found strength in each other’s presence and trust in the relationship they were building. Their wedding, a blend of tradition and elegance, was a reflection of their evolving bond. Surrounded by loved ones, the ceremony was a celebration not just of their union but of the partnership they had formed, full of promise and shared dreams. Yesha and Bhargesh’s story is a reminder that true love can emerge from the most unexpected beginnings, growing stronger over time.",
       sliderImages: yeshaBhargeshImages,
-      venue:
-        "Venue: Serenity Hotel, Styled By: Glam Weddings, MUA: Ritu Sharma, Outfits: Abu Jani Sandeep Khosla, Decor: Chic Creations",
+      venue: "Not Given",
     },
   ];
 

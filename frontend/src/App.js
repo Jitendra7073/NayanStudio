@@ -7,6 +7,7 @@ import {
   About,
   Inquiry,
   StoryList,
+  Testimonial,
   Page1,
   Page2,
   Page3,
@@ -50,6 +51,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/stories" element={<StoryList />} />
+              <Route path="/testimonial" element={<Testimonial />} />
               <Route
                 path="/stories/2024-10-17-Bhagyesh&Khevana"
                 element={<Page1 />}

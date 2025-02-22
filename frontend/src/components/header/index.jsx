@@ -10,7 +10,7 @@ const Index = ({ onLogoClick }) => {
     { label: "Home", navigation: "/" },
     { label: "Galleries", navigation: "/gallery" },
     { label: "Stories", navigation: "/stories" },
-    { label: "Testimonials", navigation: "/testimonials" },
+    { label: "Testimonials", navigation: "/testimonial" },
     { label: "About", navigation: "/about" },
     { label: "Inquire", navigation: "/inquiry" },
   ];
