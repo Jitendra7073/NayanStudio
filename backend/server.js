@@ -12,9 +12,9 @@ const PORT = 5000;
 // Connect to MongoDB
 connectDB();
 
-// FRONTEND URL
-const BASE_URL = "http://localhost:3000"
-// const BASE_URL = "https://nayanstudio.onrender.com"
+// const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://nayan-studio.onrender.com"
+
 
 // Middleware
 app.use(express.json());
