@@ -13,12 +13,9 @@ const PORT = 5000;
 connectDB();
 
 // FRONTEND URL
-<<<<<<< HEAD
-const BASE_URL = "http://localhost:3000"
-=======
 // const BASE_URL = "http://localhost:3000"
 const BASE_URL = "https://nayanstudio.onrender.com"
->>>>>>> d96628e9957dafeb055566fbdf89434ac46467e2
+
 
 // Middleware
 app.use(express.json());
