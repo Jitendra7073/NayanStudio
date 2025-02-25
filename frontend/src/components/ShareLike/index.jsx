@@ -13,7 +13,7 @@ const ShareLike = ({ heading, content, likeFrom }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // const BASE_URL = "http://localhost:5000"; // Replace with your backend URL
-  const BASE_URL = "https://nayanstudio-backend.onrender.com"; // Replace with your backend URL
+  const BASE_URL = "https://nayanstudio.onrender.com"; // Replace with your backend URL
 
   // Socket.IO connection
   const socket = io(BASE_URL);
