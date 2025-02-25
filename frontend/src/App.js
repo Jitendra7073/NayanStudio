@@ -13,6 +13,7 @@ import {
   Page3,
   Page4,
   Page5,
+  NotFound,
 } from "./pages";
 import { Header, Footer, ScrollTop } from "./components";
 import Welcome from "./components/Welcome";
@@ -72,6 +73,7 @@ function App() {
                 path="/stories/2024-10-13-Yasha&Bhargesh"
                 element={<Page5 />}
               />
+              <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
             <ScrollTop />
