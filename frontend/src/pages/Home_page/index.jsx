@@ -36,17 +36,17 @@ const Home = () => {
     {
       img: Bhageyakhevana,
       to: "./stories/2024-10-17-Bhagyesh&Khevana",
-      details: "Bhagyesh X Khevana// Jaishalmer //",
+      details: "Bhagyesh & Khevana// Jaishalmer //",
     },
     {
       img: StephanieSoumyadeep,
       to: "./stories/2024-09-22-Stephanie&Soumyadeep",
-      details: "Stephanie X Soumyadeep // Goa //",
+      details: "Bhargesh & Yesha // Goa //",
     },
     {
       img: LancyPavan,
       to: "./stories/2024-11-05-Lancy&Pavan",
-      details: "Lancy X Pavan // kashmir //",
+      details: "Lancy & Pavan // kashmir //",
     },
   ];
   return (

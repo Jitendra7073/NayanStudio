@@ -20,9 +20,9 @@ const GalleryFormat = ({ heading, date, content, sliderImages, venue }) => {
         <div className="post-slider">
           <Slider Images={sliderImages} />
         </div>
-        <div className="post-venue">
+        {/* <div className="post-venue">
           <p><strong>Venue:</strong> {venue}</p>
-        </div>
+        </div> */}
         <div className="post-ShareLike">
           <ShareLike heading={heading} content={content} likeFrom="Galleries" />
         </div>

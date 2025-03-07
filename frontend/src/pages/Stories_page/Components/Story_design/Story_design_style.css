@@ -50,9 +50,14 @@
   color: var(--subtext-color);
 }
 .Stories_design_content .Stories_design_divider {
+ 
   font-size: 15px;
   color: var(--text-color);
   font-weight: 200;
+  text-align: justify;
+  width: 950px;
+  padding: 5px 0 5px 0;
+  word-wrap: break-word;
 }
 .read_more_Stories a {
   text-decoration: none;
@@ -73,6 +78,10 @@
   }
   .Stories_design_content {
     margin-bottom: 20px;
+  }
+  .Stories_design_content .Stories_design_divider {
+    width: 100%;
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 768px) {

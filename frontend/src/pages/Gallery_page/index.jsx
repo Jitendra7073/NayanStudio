@@ -66,7 +66,7 @@ const Index = () => {
       venue: "Not Given",
     },
     {
-      heading: "Stephanie & Soumyadeep [ Arrange Marriage ]",
+      heading: "Yesha & Bhagyesh  [ Arrange Marriage ]",
       date: "September 22, 2024",
       content:
         "Priya and Manish’s wedding was a blend of modern and traditional elements. The ceremony took place at a luxurious resort, followed by a beautiful reception where family and friends gathered to celebrate. Their wedding was all about elegance, with beautiful floral decorations and an enchanting atmosphere that made the day unforgettable.",
@@ -74,7 +74,7 @@ const Index = () => {
       venue: "Not Given",
     },
     {
-      heading: "Yash & Shraddha [ Arrange Marriage ]",
+      heading: "Stephanie & Soumyadeep [ Arrange Marriage ]",
       date: "December 12, 2024",
       content:
         "Yesha and Shraddha marriage began with a foundation of respect and understanding, but it quickly grew into something far deeper. Their journey together was one of discovery, where they found strength in each other’s presence and trust in the relationship they were building. Their wedding, a blend of tradition and elegance, was a reflection of their evolving bond. Surrounded by loved ones, the ceremony was a celebration not just of their union but of the partnership they had formed, full of promise and shared dreams. Yesha and Shraddha story is a reminder that true love can emerge from the most unexpected beginnings, growing stronger over time.",
@@ -99,9 +99,9 @@ const Index = () => {
             key={index}
             heading={post.heading}
             date={post.date}
-            content={post.content}
+            // content={post.content}
             sliderImages={post.sliderImages} // Pass appropriate images
-            venue={post.venue}
+            // venue={post.venue}
           />
         ))}
       </div>

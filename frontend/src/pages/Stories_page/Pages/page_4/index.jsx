@@ -1,8 +1,9 @@
 import React from "react";
 import Footer from "../../../../components/footer";
 import StoriesPost from "../../Components/Story_design";
-import { Poster2 } from "../../../../assets/images/Stories_page";
+// import { Poster5 } from "../../../../assets/images/Stories_page";
 import "../pages_comman.css";
+import storiesData from "../data.json";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css"; // Include blur effect styles
 
@@ -16,35 +17,28 @@ const Page2 = () => {
       /\.(png|jpe?g|JPG|webp|svg)$/
     )
   );
+  // Fetch story by its name
+  const fourthStory = storiesData.find(
+    (story) => story.Header === "Yash & Shraddha [ Stephanie & Soumyadeep ]"
+  );
+
   return (
     <div>
-      <StoriesPost
-        BackgroundPoster={Poster2}
-        ImageHeading="Yash & Shraddha"
-        ImageSubHeading="[ Stephanie & Soumyadeep ]"
-        Header="Yash & Shraddha"
-        StoryDate="December 12, 2024"
-      />
-      <div className="Page_details">
-        <div className="Page_details_p">
-          <p>
-            <span>Wedding Planning / Decor:</span> Weddings Unplugged{" "}
-          </p>
-          <p>
-            <span>Makeup:</span> Bianca Louzado
-          </p>
-          <p>
-            <span>Outfits:</span> Sabyasachi, Jade by Monika Karishma
-          </p>
-          <p>
-            <span>Entertainment:</span>Bounce band, DJ Nitesh
-          </p>
-        </div>
-      </div>
+      {fourthStory && (
+        <StoriesPost
+          // BackgroundPoster={Poster5}
+          ImageHeading={fourthStory.Header}
+          ImageSubHeading="[ Jaishalmer ]"
+          Header={fourthStory.Header}
+          StoryDate={fourthStory.StoryDate}
+          content={fourthStory.content}
+          Redirection={fourthStory.Redirection}
+        />
+      )}
 
       <div className="Images_gallery_outer">
         <div className="Images_gallery">
-          {SImages.map((photos, index)  => (
+          {SImages.map((photos, index) => (
             <div className="gallery_image_div" key={index}>
               <img
                 src={photos}

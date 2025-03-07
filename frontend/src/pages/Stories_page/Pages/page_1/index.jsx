@@ -1,8 +1,8 @@
 import React from "react";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css"; // Include blur effect styles
+import "react-lazy-load-image-component/src/effects/blur.css"; 
 import StoriesPost from "../../Components/Story_design";
-import { Poster1 } from "../../../../assets/images/Stories_page";
+import storiesData from "../data.json"; 
+import { BhagyeshKhevana } from "../../../../assets/images/Stories_page";
 import "../pages_comman.css";
 
 const Page1 = () => {
@@ -16,38 +16,28 @@ const Page1 = () => {
     )
   );
 
+  // Fetch story by its name
+  const firstStory = storiesData.find(
+    (story) => story.Header === "Bhagyesh & Khevana (Love Marriage)"
+  );
+
   return (
-    <div >
-      <StoriesPost
-        BackgroundPoster={Poster1}
-        ImageHeading="Bhagyesh & Khevana"
-        ImageSubHeading="[ Jaishalmer ]"
-        Header="Bhagyesh & Khevana"
-        StoryDate="October 17, 2024"
-      />
-      <div className="Page_details">
-        <div className="Page_details_p">
-          <p>
-            <span>Wedding Planning & Decor:</span> Weddings Unplugged{" "}
-          </p>
-          <p>
-            <span>Outfits:</span> Faraz Manan, Zuhair Murad, Rajesh Pratap Singh{" "}
-          </p>
-          <p>
-            <span>Styling:</span> Clad by Tanya Vohra{" "}
-          </p>
-          <p>
-            <span>Artwork:</span> Gray Cell Designs{" "}
-          </p>
-          <p>
-            <span>Location:</span> Taj Falaknuma Palace, Hyderabad
-          </p>
-        </div>
-      </div>
+    <div>
+      {firstStory && (
+        <StoriesPost
+          BackgroundPoster={BhagyeshKhevana} 
+          ImageHeading={firstStory.Header}
+          ImageSubHeading="[ Jaishalmer ]"
+          Header={firstStory.Header}
+          StoryDate={firstStory.StoryDate}
+          content={firstStory.content} 
+          Redirection={firstStory.Redirection}
+        />
+      )}
 
       <div className="Images_gallery_outer">
         <div className="Images_gallery">
-          {jaishalmerImages.map((photos, index)  => (
+          {jaishalmerImages.map((photos, index) => (
             <div className="gallery_image_div" key={index}>
               <img
                 src={photos}

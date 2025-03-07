@@ -1,8 +1,9 @@
 import React from "react";
 import Footer from "../../../../components/footer";
 import StoriesPost from "../../Components/Story_design";
-import { Poster5 } from "../../../../assets/images/Stories_page";
+import { YeshaBhargesh } from "../../../../assets/images/Stories_page";
 import "../pages_comman.css";
+import storiesData from "../data.json";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css"; // Include blur effect styles
 
@@ -16,31 +17,25 @@ const Page2 = () => {
       /\.(png|jpe?g|JPG|webp|svg)$/
     )
   );
+
+  // Fetch story by its name
+  const Story = storiesData.find(
+    (story) => story.Header === "Yesha & Bhargesh (Arrange Marriage)"
+  );
   return (
     <div>
-      <StoriesPost
-        BackgroundPoster={Poster5}
-        ImageHeading="Yesha & Bhargesh"
-        ImageSubHeading="[ Glam Weddings ]"
-        Header="Yesha & Bhargesh"
-        StoryDate="October 13, 2022"
-      />
-      <div className="Page_details">
-        <div className="Page_details_p">
-          <p>
-            <span>Wedding Planning / Decor:</span> Weddings Unplugged{" "}
-          </p>
-          <p>
-            <span>Makeup:</span> Bianca Louzado
-          </p>
-          <p>
-            <span>Outfits:</span> Sabyasachi, Jade by Monika Karishma
-          </p>
-          <p>
-            <span>Entertainment:</span>Bounce band, DJ Nitesh
-          </p>
-        </div>
-      </div>
+
+      {Story && (
+        <StoriesPost
+          BackgroundPoster={YeshaBhargesh}
+          ImageHeading={Story.Header}
+          ImageSubHeading="[ Kashmir ]"
+          Header={Story.Header}
+          StoryDate={Story.StoryDate}
+          content={Story.content}
+          Redirection={Story.Redirection}
+        />
+      )}
 
       <div className="Images_gallery_outer">
         <div className="Images_gallery">

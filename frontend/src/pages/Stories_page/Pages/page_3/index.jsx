@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../../../../components/footer";
 import StoriesPost from "../../Components/Story_design";
-import { Poster3 } from "../../../../assets/images/Stories_page";
+import { LancyPavan } from "../../../../assets/images/Stories_page";
 import "../pages_comman.css";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
+import storiesData from "../data.json"; 
+
 import "react-lazy-load-image-component/src/effects/blur.css"; // Include blur effect styles
 
 const Page2 = () => {
@@ -16,31 +17,24 @@ const Page2 = () => {
       /\.(png|jpe?g|JPG|webp|svg)$/
     )
   );
+    // Fetch story by its name
+    const Story = storiesData.find(
+      (story) => story.Header === "Stephanie & Soumyadeep [ Goa ]"
+    );
   return (
     <div>
-      <StoriesPost
-        BackgroundPoster={Poster3}
-        ImageHeading="Lancy & Pavan"
-        ImageSubHeading="[ Kashmir ]"
-        Header="Lancy & Pavan"
-        StoryDate="November 5, 2024"
-      />
-      <div className="Page_details">
-        <div className="Page_details_p">
-          <p>
-            <span>Wedding Planning / Decor:</span> Weddings Unplugged{" "}
-          </p>
-          <p>
-            <span>Makeup:</span> Bianca Louzado
-          </p>
-          <p>
-            <span>Outfits:</span> Sabyasachi, Jade by Monika Karishma
-          </p>
-          <p>
-            <span>Entertainment:</span>Bounce band, DJ Nitesh
-          </p>
-        </div>
-      </div>
+
+      {Story && (
+        <StoriesPost
+          BackgroundPoster={LancyPavan} 
+          ImageHeading={Story.Header}
+          Header={Story.Header}
+          StoryDate={Story.StoryDate}
+          content={Story.content} 
+          Redirection={Story.Redirection}
+        />
+      )}
+
 
       <div className="Images_gallery_outer">
         <div className="Images_gallery">

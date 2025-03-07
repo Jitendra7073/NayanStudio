@@ -16,26 +16,31 @@ const About = () => {
               <div className="About_inner_content">
                 <h1 className="About_heading">nayan studio.</h1>
                 <p className="About_subtitle">
-                  <strong>Moment. Memory. Miracle.</strong>
+                  <strong>Emotion. Essence. Eternity.</strong>
                 </p>
                 <p className="About_description">
-                  The journey is never about a shot but the unsaid stories
-                  within the shooting experience. The quest within is of
-                  something which is 'epiphanic'.
+                  At Nayan Studio, every click is more than just an image — it’s
+                  a silent conversation, a heartfelt story frozen in time. Our
+                  lens doesn’t just capture faces; it captures the emotions that
+                  linger in the unsaid, the spark that lives between moments.
                 </p>
                 <p className="About_description">
-                  As an artist whose medium of bringing the art to the world is
-                  an intent of compartmentalising the moments, I am all about
-                  things which are not seen by the naked eye but a soul which
-                  feels what cannot be said through any other medium.
+                  We believe art lies not in what the eye can see but in what
+                  the heart can feel. Each photograph is a reflection of the
+                  unseen — the quiet tear of joy, the unspoken promise, the
+                  fleeting glance — emotions too deep for words but too powerful
+                  to ignore.
                 </p>
                 <p className="About_description">
-                  The world is material but I am still looking for a metaphor in
-                  it. Anything which can allow me the space to create what is
-                  not felt is the domain I am looking for.
+                  Our journey is not about perfection; it’s about authenticity.
+                  The raw, the real, the vulnerable — that is where beauty
+                  lives. We seek the magic in moments that might otherwise slip
+                  away, weaving together fragments of time into a lasting
+                  tapestry of memories.Because at Nayan Studio, we don’t just
+                  capture pictures — we capture feelings.
                 </p>
                 <p>
-                  <strong>People. Photographs. Perfection.</strong>
+                  <strong>Stories. Emotions. Forever.</strong>
                 </p>
               </div>
             </div>
