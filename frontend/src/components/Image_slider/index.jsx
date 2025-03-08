@@ -40,8 +40,8 @@ const Index = ({ images }) => {
     slidesToScroll: 1,
     waitForAnimate: false,
     autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: false,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     nextArrow: <CustomArrow direction="next" />,
     prevArrow: <CustomArrow direction="prev" />,
     responsive: [

@@ -2,8 +2,8 @@ import React, { useMemo } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import "react-lazy-load-image-component/src/effects/blur.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./gridImageSlider.css"; // Add minimal styles here
 
 // Custom Arrow Component
@@ -59,9 +59,10 @@ const GridSlider = ({ Images }) => {
     <Slider {...settings} className="grid-images-slider">
       {Images.map((image, index) => (
         <div key={index} className="slider-item">
-          <img
+          <LazyLoadImage
             src={image}
             alt={`Slide ${index + 1}`}
+            effect="blur"
             loading="lazy"
           />
         </div>
